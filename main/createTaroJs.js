@@ -6,7 +6,7 @@ function writeAppJsFile(filepath, filename) {
     let folders = vscode.workspace.workspaceFolders;
     if (!folders) { return }
 
-    folders.forEach((item,index)=>{
+    folders.forEach((item)=>{
 
         if(filepath.indexOf(item.uri.fsPath)>-1){
             let tempPath=filepath.replace(/\\/ig,'/')+'/';
@@ -27,7 +27,7 @@ function writeAppJsFile(filepath, filename) {
 }
 function createFile(filepath, filename) {
     let url = filepath + '/' + filename + '.js'
-    if (fs.existsSync(url)) {
+    if (filename&&fs.existsSync(url)) {
         vsWindow.showInformationMessage('目标文件已存在');
         return;
     }
