@@ -27,7 +27,7 @@ function writeAppJsFile(filepath, filename) {
 }
 function createFile(filepath, filename) {
     let url = filepath + '/' + filename + '.js'
-    if (filename&&fs.existsSync(url)) {
+    if (fs.existsSync(url)) {
         vsWindow.showInformationMessage('目标文件已存在');
         return;
     }

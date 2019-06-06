@@ -38,12 +38,12 @@
 	"devDependencies": {
 		"@types/mocha": "^2.2.42",
 		"@types/node": "^10.12.21",
-		"babel-generator": "^6.26.1",
 		"eslint": "^5.13.0",
 		"typescript": "^3.3.1",
 		"vscode": "^1.1.28"
 	},
 	"dependencies": {
+		"babel-generator": "^6.26.1",
 		"babel-traverse": "^6.26.0",
 		"babylon": "^6.18.0",
 		"escodegen": "^1.11.1"
