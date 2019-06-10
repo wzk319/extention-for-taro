@@ -2,7 +2,7 @@
 	"name": "extention-for-taro",
 	"displayName": "extention for taro",
 	"publisher": "wangzk",
-	"description": "",
+	"description": "taro插件，创建taro js文件，以及代码片段",
 	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.34.0"
@@ -29,7 +29,13 @@
 					"group": "navigation"
 				}
 			]
-		}
+		},
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/js.json"
+			}
+		]
 	},
 	"scripts": {
 		"postinstall": "node ./node_modules/vscode/bin/install",

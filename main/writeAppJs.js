@@ -44,7 +44,9 @@ function wirteAppJsFile(srcUrl, pageUrl) {
     }
   });
   // console.log(ast)
-  let code = generator.default(ast, {}, jsCode)
+  let code = generator.default(ast, {
+    retainLines:true
+  }, jsCode)
   fs.writeFileSync(appJsUrl,code.code)
 }
 module.exports={
