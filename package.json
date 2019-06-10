@@ -3,7 +3,7 @@
 	"displayName": "extention for taro",
 	"publisher": "wangzk",
 	"description": "taro插件，创建taro js文件，以及代码片段",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"engines": {
 		"vscode": "^1.34.0"
 	},
